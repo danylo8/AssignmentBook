@@ -1,7 +1,11 @@
 public class AppointmentBook
 {
+    private boolean[][] schedule;
 
-
+    public AppointmentBook(boolean[][] schedule)
+    {
+        this.schedule=schedule;
+    }
     /**
      * Returns true if minute in period is available for an appointment and returns
      * false otherwise
@@ -9,7 +13,7 @@ public class AppointmentBook
      */
     private boolean isMinuteFree(int period, int minute)
     { /* implementation not shown */
-
+        return schedule[period-1][minute];
     }
     /**
      * Marks the block of minutes that starts at startMinute in period and
@@ -27,7 +31,7 @@ public class AppointmentBook
      */
     public int findFreeBlock(int period, int duration)
     { /* to be implemented in part (a) */
-
+        return 0;
     }
     /**
      * Searches periods from startPeriod to endPeriod, inclusive, for a block
@@ -36,10 +40,10 @@ public class AppointmentBook
      * returns false.
      * Preconditions: 1 <= startPeriod <= endPeriod <= 8; 1 <= duration <= 60
      */
-    public boolean makeAppointment(int startPeriod, int endPeriod,
+    public boolean makeAppointment(int startPeriod, int endPeriod, int duration)
 
-                                   int duration)
-
-    { /* to be implemented in part (b) */ }
+    { /* to be implemented in part (b) */
+        return false;
+    }
 // There may be instance variables, constructors, and methods that are not shown.
 }
