@@ -44,7 +44,7 @@ public class AppointmentBook
             if (block == duration)
             return i - duration + 1;
         }
-            else block=0;
+        else block=0;
 
         }
         return -1;

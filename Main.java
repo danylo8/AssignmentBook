@@ -12,6 +12,6 @@ public class Main {
        // a.printPeriod(2);
 
         System.out.println(a.findFreeBlock(2,15));
-
+        System.out.println(a.findFreeBlock(2,20));
     }
 }
